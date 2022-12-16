@@ -17,3 +17,10 @@
     }
   }
 }
+
+// Breakpoints
+@mixin others--lg() {
+  .news_cards {
+    flex-direction: row;
+  }
+}

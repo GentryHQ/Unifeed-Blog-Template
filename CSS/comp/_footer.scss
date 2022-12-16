@@ -5,3 +5,10 @@
     gap: 1.25rem;
     text-align: center;
 }
+
+@mixin footer--sm() {
+    .footer {
+        flex-direction: column;
+    }
+}
+

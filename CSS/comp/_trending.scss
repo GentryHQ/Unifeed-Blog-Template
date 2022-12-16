@@ -7,30 +7,55 @@
 
 .contentArea {
     h1 {
-        padding-block: 3.125rem 1.25rem;
+        padding-block: 50px 20px;
         font-weight: 900;
     }
 
     p {
-        font-size: 1rem
+        font-size: 16px
     }
 }
 
 .authorBox {
     @include u.flex-jc;
-    margin-block-start: 1.25rem;
-    gap: 1.25rem;
+    margin-block-start: 20px;
+    gap: 20px;
 
     img{
-        inline-size: 3.75rem;
+        inline-size: 60px;
     }
 
     h5 {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     p {
         font-weight: 500;
         color: #6d5757;
+    }
+}
+
+//Called in breakpoint.scss: Used for responsiveness on large screens
+
+@mixin trending--lg() {
+    .trending_news {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        
+        .img_box {
+            flex-basis: 40%;
+        }
+
+        .contentArea {
+            flex-basis: 60%;
+
+            h1 {
+                font-size: 2.5rem;
+                padding-block: 0px 20px;
+
+            }
+        }
     }
 }

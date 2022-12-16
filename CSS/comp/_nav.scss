@@ -4,9 +4,19 @@
     @include u.flex;
 
     .links {
-        // @include u.flex;
-        display: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: -100%;
+        right: 0;
+        left: 0;
+        background-color: white;
         gap: 1.25rem;
+
+        transition: all 0.5s ease-in-out;
+
 
         li {
             font-size: .9375rem;
@@ -24,10 +34,28 @@
     }
 }
 
-@mixin hero--md() {
+.nav_menu .active {
+    top: 0;
+    height: 100%;
+}
+
+#ham { 
+    position: relative;
+    z-index: 99;
+}
+
+
+@mixin nav--md() {
     .nav_menu {
         .links {
             @include u.flex;
+            background-color: transparent;
+            position: unset;
+            flex-direction: row;
         }
+    }
+
+    #ham {
+        display: none;
     }
 }

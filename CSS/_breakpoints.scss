@@ -1,5 +1,20 @@
-@use './comp/nav';
+@use './comp/nav' as n;
+@use './comp/trending' as t;
+@use './comp/others' as o;
+@use './comp/footer' as f;
 
-@media screen and (min) {
-    
+//Small screen i.e mobile
+@media screen and (max-width:48rem) {
+    @include f.footer--sm();
+}
+
+//Medium screen i.e tablet
+@media screen and (min-width:48rem) {
+    @include n.nav--md();
+}
+
+//larger screen i.e desktop
+@media screen and (min-width:63.9375rem) {
+    @include t.trending--lg();
+    @include o.others--lg();
 }
