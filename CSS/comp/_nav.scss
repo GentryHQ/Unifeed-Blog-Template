@@ -1,0 +1,33 @@
+@use '../utili' as u;
+
+.nav_menu {
+    @include u.flex;
+
+    .links {
+        // @include u.flex;
+        display: none;
+        gap: 1.25rem;
+
+        li {
+            font-size: .9375rem;
+            font-weight: 500;
+            color: rgb(134, 134, 134);
+        }
+
+        .cta {
+            background-color: #f08f10;
+            color: black;
+            font-weight: 700;
+            padding: 1.25rem;
+            border-radius: 5px;
+        }
+    }
+}
+
+@mixin hero--md() {
+    .nav_menu {
+        .links {
+            @include u.flex;
+        }
+    }
+}

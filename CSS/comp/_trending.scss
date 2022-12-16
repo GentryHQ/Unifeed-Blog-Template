@@ -1,0 +1,36 @@
+@use  '../utili' as u;
+
+.trending_news {
+    @include u.flex;
+    flex-direction: column;    
+}
+
+.contentArea {
+    h1 {
+        padding-block: 3.125rem 1.25rem;
+        font-weight: 900;
+    }
+
+    p {
+        font-size: 1rem
+    }
+}
+
+.authorBox {
+    @include u.flex-jc;
+    margin-block-start: 1.25rem;
+    gap: 1.25rem;
+
+    img{
+        inline-size: 3.75rem;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    p {
+        font-weight: 500;
+        color: #6d5757;
+    }
+}

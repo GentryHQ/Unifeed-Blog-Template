@@ -1,0 +1,24 @@
+//This works to put the whole page in the fixed size
+.container {
+    max-inline-size: 87.5rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+    padding-block: 1.25rem;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-jc {
+    display: flex;
+    align-items: center;
+    
+}
+
+//This controls all thumbnail image for each blog post preview.
+.thumb {
+    inline-size: 100%;
+}

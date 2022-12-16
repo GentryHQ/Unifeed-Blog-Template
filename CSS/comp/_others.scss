@@ -1,0 +1,19 @@
+@use "../utili" as u;
+
+.news_others {
+  margin-block: 3.125rem;
+}
+
+.news_cards {
+    @include u.flex;
+    flex-direction: column;
+    gap: 3.125rem;
+    
+  .card {
+    h2 {
+      padding-block: 1.25rem;
+      font-size: 30px;
+      font-weight: 700;
+    }
+  }
+}

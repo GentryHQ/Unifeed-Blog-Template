@@ -1,0 +1,7 @@
+@use "../utili" as u;
+
+.footer {
+    @include u.flex;
+    gap: 1.25rem;
+    text-align: center;
+}
